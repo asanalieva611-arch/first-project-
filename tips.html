@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Советы и статьи — Помощь родителям</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   
+    <<header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Логотип Помощь Родителям" class="logo__img">
+                YoungFamily
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="tips.html" class="nav__link nav__link--active">Советы и статьи</a>
+                    </li>
+                    <li class="nav__item"><a href="video.html" class="nav__link">Видеоуроки</a></li>
+                    <li class="nav__item"><a href="faq.html" class="nav__link">Частые вопросы</a></li>
+                </ul>
+            </nav>
+            <button class="burger" id="burger-btn">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
+        </div>
+        </header>
+
+        <main>
+            <section class="page-header">
+                <div class="container">
+                    <h1 class="page-header__title">База знаний для родителей</h1>
+                    <div class="page-header__icons">
+                        <img class="page-header__icons-1" src="images/tips.png" alt="Иконка Советы и статьи">
+                        <img class="page-header__icons-2" src="images/tips-2.png" alt="Иконка Советы и статьи">
+                    </div>
+                    <p class="page-header__text">Проверенные рекомендации от педиатров и психологов.</p>
+
+                </div>
+            </section>
+
+            
+            <section class="section filter-section section--light">
+                <div class="container">
+                    <div class="filter-container">
+
+                        
+                        <div class="tabs-buttons">
+                            <button class="tab-btn active" data-type="article">📚 Развернутые статьи</button>
+                            <button class="tab-btn" data-type="tip">💡 Короткие советы</button>
+                        </div>
+
+                        <input type="text" id="searchInput" class="search-input"
+                            placeholder="Поиск по базе (например, кризис)...">
+
+                        
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-filter="all">Все темы</button>
+                            <button class="filter-btn" data-filter="psy">Психология</button>
+                            <button class="filter-btn" data-filter="health">Здоровье</button>
+                            <button class="filter-btn" data-filter="dev">Развитие</button>
+                            <button class="filter-btn" data-filter="sleep">Сон</button>
+                            <button class="filter-btn" data-filter="food">Питание</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="section articles">
+                <div class="container">
+                    <div class="cards-grid" id="articlesGrid">
+
+                       
+                        
+                        <article class="card card--article content-item" data-type="article" data-category="psy">
+                            <div class="card__content">
+                                <span class="tag tag--psy">Психология</span>
+                                <h3 class="card__title">Эмоциональный интеллект: учим понимать чувства</h3>
+                                <div class="card__text">
+                                    <p>Умение распознавать свои и чужие эмоции важнее академических знаний. Начните с
+                                        озвучивания: «Я вижу, ты злишься, потому что башня сломалась». Используйте
+                                        карточки
+                                        с эмоциями и обсуждайте чувства героев сказок.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card card--article content-item" data-type="article" data-category="health">
+                            <div class="card__content">
+                                <span class="tag tag--health">Здоровье</span>
+                                <h3 class="card__title">Закаливание ребенка: с чего начать?</h3>
+                                <div class="card__text">
+                                    <p>Настоящее закаливание — это не обливание ледяной водой раз в год, а образ жизни.
+                                        Начните с простых шагов: не кутайте ребенка дома, разрешайте бегать босиком,
+                                        поддерживайте температуру воздуха в детской не выше 20-22 градусов.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card card--article content-item" data-type="article" data-category="sleep">
+                            <div class="card__content">
+                                <span class="tag tag--sleep">Сон</span>
+                                <h3 class="card__title">Ночные страхи и кошмары: в чем разница?</h3>
+                                <div class="card__text">
+                                    <p>Кошмары снятся под утро, ребенок просыпается и может их рассказать — его нужно
+                                        обнять
+                                        и успокоить. Ночные страхи случаются в первой половине ночи: ребенок кричит с
+                                        открытыми глазами, но спит. В этом случае просто будьте рядом и следите за
+                                        безопасностью, будить не надо.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card card--article content-item" data-type="article" data-category="psy">
+                            <div class="card__content">
+                                <span class="tag tag--psy">Психология</span>
+                                <h3 class="card__title">Воображаемые друзья: стоит ли паниковать?</h3>
+                                <div class="card__text">
+                                    <p>Появление невидимого друга в возрасте 3-5 лет — нормальный этап развития
+                                        фантазии.
+                                        Часто воображаемый друг помогает ребенку справляться со страхами или чувством
+                                        одиночества. Подыгрывайте, но не позволяйте сваливать на «друга» вину за
+                                        проступки.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="psy">
+                            <div class="card__content">
+                                <span class="tag tag--psy">Психология</span>
+                                <h3 class="card__title">Детская ложь: почему дети фантазируют?</h3>
+                                <div class="card__text">
+                                    <p>Малыши до 5 лет не лгут намеренно, они просто путают фантазию и реальность. Дети
+                                        постарше могут обманывать из-за страха наказания. Если поймали на лжи, выясните
+                                        причину страха, а не ругайте за сам факт выдумки.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- ================= ДОПОЛНИТЕЛЬНЫЕ СТАТЬИ: ЗДОРОВЬЕ ================= -->
+                        <article class="card card--article content-item" data-type="article" data-category="psy">
+                            <div class="card__content">
+                                <span class="tag tag--psy">Психология</span>
+                                <h3 class="card__title">Детская жадность: почему малыш не делится?</h3>
+                                <div class="card__text">
+                                    <p>До 3-4 лет понятие «поделиться» для ребенка не существует, игрушка кажется ему
+                                        продолжением его самого. Не стыдите ребенка словами «не будь жадиной». Учите
+                                        меняться игрушками на время, а не просто отдавать свое.</p>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <article class="card card--article content-item" data-type="article" data-category="health">
+                            <div class="card__content">
+                                <span class="tag tag--health">Здоровье</span>
+                                <h3 class="card__title">Витамин D: зачем нужен и как давать?</h3>
+                                <div class="card__text">
+                                    <p>Витамин D критически важен для формирования костей и работы иммунитета. В
+                                        большинстве
+                                        регионов педиатры рекомендуют давать его детям профилактической дозой круглый
+                                        год,
+                                        независимо от количества солнечных дней.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="health">
+                            <div class="card__content">
+                                <span class="tag tag--health">Здоровье</span>
+                                <h3 class="card__title">Защита от солнца: выбираем SPF для малыша</h3>
+                                <div class="card__text">
+                                    <p>Детская кожа очень уязвима к ультрафиолету. Детям до 6 месяцев солнцезащитные
+                                        кремы
+                                        не рекомендуются (лучше оставаться в тени). Для детей старше выбирайте кремы с
+                                        физическими фильтрами (оксид цинка или диоксид титана) с SPF 50.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="health">
+                            <div class="card__content">
+                                <span class="tag tag--health">Здоровье</span>
+                                <h3 class="card__title">Укачивание в транспорте: как помочь?</h3>
+                                <div class="card__text">
+                                    <p>Кинетоз (укачивание) часто встречается у детей 2-12 лет из-за незрелости
+                                        вестибулярного аппарата. Перед поездкой не кормите плотно, в машине просите
+                                        смотреть
+                                        вперед на горизонт, обеспечьте приток прохладного свежего воздуха.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        
+                        <article class="card card--article content-item" data-type="article" data-category="dev">
+                            <div class="card__content">
+                                <span class="tag tag--dev">Развитие</span>
+                                <h3 class="card__title">Приучение к горшку: пошаговый план</h3>
+                                <div class="card__text">
+                                    <p>Не торопитесь! Ребенок физиологически готов контролировать сфинктеры только к
+                                        1,5–2
+                                        годам. Признаки готовности: малыш остается сухим более 2 часов, может сам снять
+                                        штанишки и показывает, что ему дискомфортно в грязном подгузнике.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="dev">
+                            <div class="card__content">
+                                <span class="tag tag--dev">Развитие</span>
+                                <h3 class="card__title">Задержка речевого развития: когда бить тревогу?</h3>
+                                <div class="card__text">
+                                    <p>Если в 1 год ребенок не использует указательный жест, в 1,5 года не понимает
+                                        простых
+                                        просьб («дай мяч»), а в 2 года в словаре нет даже 10-15 слов или простых фраз
+                                        («мама
+                                        дай») — это повод обратиться к неврологу и логопеду.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="dev">
+                            <div class="card__content">
+                                <span class="tag tag--dev">Развитие</span>
+                                <h3 class="card__title">Ребенок-левша: особенности и правила</h3>
+                                <div class="card__text">
+                                    <p>Ведущая рука окончательно определяется к 4-5 годам. Никогда не переучивайте левшу
+                                        —
+                                        это может привести к заиканию и неврозам! Просто организуйте рабочее место так,
+                                        чтобы свет падал справа, и купите специальные ножницы для левшей.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="dev">
+                            <div class="card__content">
+                                <span class="tag tag--dev">Развитие</span>
+                                <h3 class="card__title">Развитие через сказкотерапию</h3>
+                                <div class="card__text">
+                                    <p>Сказки — мощный инструмент. Если ребенок боится врачей, придумайте сказку про
+                                        зайчика, который сходил в поликлинику и стал здоровым. Через метафоры дети
+                                        гораздо
+                                        лучше усваивают правила поведения и справляются с тревогами.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        
+                        <article class="card card--article content-item" data-type="article" data-category="sleep">
+                            <div class="card__content">
+                                <span class="tag tag--sleep">Сон</span>
+                                <h3 class="card__title">Переход на один дневной сон</h3>
+                                <div class="card__text">
+                                    <p>Обычно происходит в возрасте от 13 до 18 месяцев. Главные признаки: ребенок
+                                        отказывается от второго сна, долго укладывается вечером или начинает просыпаться
+                                        ночью. Переход делайте плавно, сдвигая утреннее бодрствование на 15-20 минут
+                                        каждые
+                                        2 дня.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="sleep">
+                            <div class="card__content">
+                                <span class="tag tag--sleep">Сон</span>
+                                <h3 class="card__title">Ночные страхи и кошмары: в чем разница?</h3>
+                                <div class="card__text">
+                                    <p>Кошмары снятся под утро, ребенок просыпается и может их рассказать — его нужно
+                                        обнять
+                                        и успокоить. Ночные страхи случаются в первой половине ночи: ребенок кричит с
+                                        открытыми глазами, но спит. В этом случае просто будьте рядом и следите за
+                                        безопасностью, будить не надо.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="sleep">
+                            <div class="card__content">
+                                <span class="tag tag--sleep">Сон</span>
+                                <h3 class="card__title">Совместный сон: правила безопасности</h3>
+                                <div class="card__text">
+                                    <p>Если вы выбрали СС, соблюдайте строгие правила: матрас должен быть жестким,
+                                        никаких
+                                        объемных одеял и подушек возле младенца. Спать с ребенком запрещено, если
+                                        родители
+                                        сильно уставшие, принимали снотворное или алкоголь.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="sleep">
+                            <div class="card__content">
+                                <span class="tag tag--sleep">Сон</span>
+                                <h3 class="card__title">Ранние подъемы: как отучить вставать в 5 утра?</h3>
+                                <div class="card__text">
+                                    <p>Часто ранние пробуждения связаны с переутомлением накануне (попробуйте укладывать
+                                        на
+                                        30 минут раньше) или светом в комнате. Повесьте плотные шторы блэкаут, так как
+                                        солнечный свет разрушает гормон сна мелатонин.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        
+                        <article class="card card--article content-item" data-type="article" data-category="food">
+                            <div class="card__content">
+                                <span class="tag tag--food">Питание</span>
+                                <h3 class="card__title">Сахар в рационе: скрытая угроза</h3>
+                                <div class="card__text">
+                                    <p>ВОЗ рекомендует полностью исключить добавленный сахар до 2 лет. Обращайте
+                                        внимание на
+                                        этикетки: сахар часто прячется в детских творожках, соках и даже хлебе.
+                                        Отдавайте
+                                        предпочтение естественной сладости свежих фруктов.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="food">
+                            <div class="card__content">
+                                <span class="tag tag--food">Питание</span>
+                                <h3 class="card__title">Самоприкорм (BLW): что это такое?</h3>
+                                <div class="card__text">
+                                    <p>Baby-Led Weaning — подход, при котором ребенок с 6 месяцев ест не пюре с ложечки,
+                                        а
+                                        кусочки мягкой пищи руками с общего стола. Это отлично развивает моторику и
+                                        пищевой
+                                        интерес, но требует изучения правил безопасной подачи продуктов.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="food">
+                            <div class="card__content">
+                                <span class="tag tag--food">Питание</span>
+                                <h3 class="card__title">Ребенок не ест овощи: 5 хитрых способов</h3>
+                                <div class="card__text">
+                                    <p>Не заставляйте! Предлагайте овощи постоянно в разных видах (сырые, вареные,
+                                        запеченные). Прячьте овощи в привычные блюда: трите морковь в котлеты, делайте
+                                        соусы
+                                        из томатов и кабачков, пеките оладьи из брокколи.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="food">
+                            <div class="card__content">
+                                <span class="tag tag--food">Питание</span>
+                                <h3 class="card__title">Питьевой режим малыша</h3>
+                                <div class="card__text">
+                                    <p>До начала прикорма (6 месяцев) здоровому ребенку на ГВ или смеси вода не нужна.
+                                        После
+                                        полугода предлагайте воду в чашке или поильнике с каждым приемом пищи. Забудьте
+                                        про
+                                        сладкие чаи и компоты — лучшим напитком является чистая вода.</p>
+                                </div>
+                            </div>
+                        </article> 
+                        <article class="card card--article content-item" data-type="article" data-category="psy">
+                            <div class="card__content">
+                                <span class="tag tag--psy">Психология</span>
+                                <h3 class="card__title">Братья и сестры: как избежать детской ревности?</h3>
+                                <div class="card__text">
+                                    <p>Появление второго ребенка — стресс для старшего. Не заставляйте старшего сразу
+                                        любить
+                                        младенца и не делайте из него няньку. Выделяйте хотя бы 15 минут в день на игру
+                                        только со старшим ребенком, чтобы он чувствовал свою значимость.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="psy">
+                            <div class="card__content">
+                                <span class="tag tag--psy">Психология</span>
+                                <h3 class="card__title">Как правильно хвалить ребенка: секреты мотивации</h3>
+                                <div class="card__text">
+                                    <p>Вместо абстрактного «Ты молодец» хвалите за усилия: «Я вижу, как ты старался,
+                                        когда
+                                        рисовал эту машину». Оценка усилий, а не таланта, формирует у ребенка здоровую
+                                        самооценку и желание не сдаваться перед трудностями.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="psy">
+                            <div class="card__content">
+                                <span class="tag tag--psy">Психология</span>
+                                <h3 class="card__title">Детские страхи: как помочь малышу побороть монстров</h3>
+                                <div class="card__text">
+                                    <p>Никогда не высмеивайте страх темноты или подкроватных монстров. Для ребенка они
+                                        реальны. Купите красивый ночник, оставьте дверь приоткрытой и вместе «прогоните»
+                                        чудовищ с помощью волшебного спрея (обычной воды в пульверизаторе).</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        
+                        <article class="card card--article content-item" data-type="article" data-category="health">
+                            <div class="card__content">
+                                <span class="tag tag--health">Здоровье</span>
+                                <h3 class="card__title">Прорезывание зубов: как облегчить боль</h3>
+                                <div class="card__text">
+                                    <p>Первые зубы могут появиться в 5-8 месяцев. Для снятия боли используйте
+                                        охлажденные
+                                        прорезыватели и массаж десен силиконовой щеточкой. При сильном беспокойстве на
+                                        ночь
+                                        можно использовать обезболивающее по назначению педиатра.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="health">
+                            <div class="card__content">
+                                <span class="tag tag--health">Здоровье</span>
+                                <h3 class="card__title">Профилактика плоскостопия у детей</h3>
+                                <div class="card__text">
+                                    <p>Стопа формируется до 5-7 лет. Чтобы избежать плоскостопия, разрешайте ребенку
+                                        больше
+                                        ходить босиком по неровным поверхностям (песок, трава, ортопедические коврики).
+                                        Обувь дома здоровому ребенку не нужна!</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- === РАЗВИТИЕ === -->
+                        <article class="card card--article content-item" data-type="article" data-category="dev">
+                            <div class="card__content">
+                                <span class="tag tag--dev">Развитие</span>
+                                <h3 class="card__title">Развитие мелкой моторики из подручных средств</h3>
+                                <div class="card__text">
+                                    <p>Не обязательно покупать дорогие игрушки. Развивать моторику (а значит, и речь)
+                                        можно
+                                        на кухне: дайте малышу сортировать фасоль и макароны, лепить из соленого теста
+                                        или
+                                        переливать воду губкой из одной миски в другую.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="dev">
+                            <div class="card__content">
+                                <span class="tag tag--dev">Развитие</span>
+                                <h3 class="card__title">Как привить ребенку любовь к чтению?</h3>
+                                <div class="card__text">
+                                    <p>Дети копируют родителей. Если вы всегда с телефоном, ребенок не возьмет книгу.
+                                        Читайте вслух перед сном, обсуждайте сюжеты, выбирайте интерактивные книги с
+                                        окошками. Главное — процесс должен приносить радость, а не быть наказанием.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="dev">
+                            <div class="card__content">
+                                <span class="tag tag--dev">Развитие</span>
+                                <h3 class="card__title">Кризис первоклассника: адаптация к школе</h3>
+                                <div class="card__text">
+                                    <p>В первые месяцы школы ребенок может стать раздражительным или плаксивым. Это
+                                        нормальная реакция на смену режима и новые требования. Снизьте нагрузку по
+                                        кружкам,
+                                        следите за сном и всегда будьте на стороне ребенка.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        
+                        <article class="card card--article content-item" data-type="article" data-category="sleep">
+                            <div class="card__content">
+                                <span class="tag tag--sleep">Сон</span>
+                                <h3 class="card__title">Регресс сна в 4 месяца: что это и когда пройдет?</h3>
+                                <div class="card__text">
+                                    <p>Примерно в 4 месяца структура сна младенца меняется и становится похожей на
+                                        взрослую.
+                                        Ребенок может начать просыпаться каждый час. Это нужно просто пережить:
+                                        сохраняйте
+                                        спокойствие, используйте белый шум и строгие ритуалы укладывания.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="sleep">
+                            <div class="card__content">
+                                <span class="tag tag--sleep">Сон</span>
+                                <h3 class="card__title">Самостоятельное засыпание: мягкие методики</h3>
+                                <div class="card__text">
+                                    <p>Обучать ребенка засыпать самому лучше после 6 месяцев. Суть мягких методик в том,
+                                        чтобы постепенно сокращать помощь родителя (укачивание заменить на похлопывание,
+                                        затем просто сидеть рядом с кроваткой), не допуская сильного плача.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        
+                        <article class="card card--article content-item" data-type="article" data-category="food">
+                            <div class="card__content">
+                                <span class="tag tag--food">Питание</span>
+                                <h3 class="card__title">Пищевая аллергия при введении прикорма</h3>
+                                <div class="card__text">
+                                    <p>Аллергены (яйца, арахис, рыба, молочный белок) современные педиатры советуют
+                                        вводить
+                                        уже до года, но очень осторожно, микродозами. Если появилась сыпь вокруг рта или
+                                        на
+                                        теле — исключите продукт и обратитесь к врачу.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="food">
+                            <div class="card__content">
+                                <span class="tag tag--food">Питание</span>
+                                <h3 class="card__title">Как научить ребенка жевать кусочки?</h3>
+                                <div class="card__text">
+                                    <p>Переход от пюре к кусочкам должен начаться в 8-10 месяцев. Дайте ребенку мягкие
+                                        кусочки размером с горошину (вареная морковь, банан). Если затянуть с пюре до
+                                        1,5
+                                        лет, у ребенка может угаснуть жевательный рефлекс.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card card--article content-item" data-type="article" data-category="psy">
+                            <div class="card__content">
+                                <span class="tag tag--psy">Психология</span>
+                                <h3 class="card__title">Как правильно реагировать на детскую истерику?</h3>
+                                <div class="card__text">
+                                    <p>Истерика у ребенка 2-4 лет — это не манипуляция, а неспособность справиться с
+                                        эмоциями. Главное правило — сохранять спокойствие, быть рядом и проговаривать
+                                        эмоции
+                                        ребенка.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="psy">
+                            <div class="card__content">
+                                <span class="tag tag--psy">Психология</span>
+                                <h3 class="card__title">Кризис 3 лет: инструкция по выживанию</h3>
+                                <div class="card__text">
+                                    <p>Период "Я сам!" и постоянного негативизма. В это время важно давать ребенку
+                                        иллюзию
+                                        выбора (например, "Ты наденешь красную шапку или синюю?") вместо прямых
+                                        приказов.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="psy">
+                            <div class="card__content">
+                                <span class="tag tag--psy">Психология</span>
+                                <h3 class="card__title">Адаптация к детскому саду</h3>
+                                <div class="card__text">
+                                    <p>Чтобы процесс прошел мягко, начинайте с 2 часов в день. Обязательно придумайте
+                                        ритуал
+                                        прощания (например, "секретное рукопожатие") и всегда забирайте вовремя.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="health">
+                            <div class="card__content">
+                                <span class="tag tag--health">Здоровье</span>
+                                <h3 class="card__title">Базовая аптечка: что должно быть дома</h3>
+                                <div class="card__text">
+                                    <p>Жаропонижающие, солевые капли, средства для регидратации, антисептики и
+                                        электронный
+                                        термометр. Дозировка лекарств всегда рассчитывается по весу, а не по возрасту!
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="health">
+                            <div class="card__content">
+                                <span class="tag tag--health">Здоровье</span>
+                                <h3 class="card__title">Когда нужно сбивать температуру?</h3>
+                                <div class="card__text">
+                                    <p>Педиатры рекомендуют ориентироваться не на градусник, а на самочувствие. Если при
+                                        38.5 ребенок активен — не сбивайте. Если при 37.5 ему плохо, он вялый — дайте
+                                        жаропонижающее.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="dev">
+                            <div class="card__content">
+                                <span class="tag tag--dev">Развитие</span>
+                                <h3 class="card__title">Дети и экраны: нормы ВОЗ</h3>
+                                <div class="card__text">
+                                    <p>До 2 лет гаджеты не рекомендуются вообще. От 2 до 5 лет — максимум 1 час в день.
+                                        Важно смотреть мультфильмы вместе, чтобы обсуждать происходящее на экране.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="dev">
+                            <div class="card__content">
+                                <span class="tag tag--dev">Развитие</span>
+                                <h3 class="card__title">Польза и вред раннего развития</h3>
+                                <div class="card__text">
+                                    <p>Не стоит учить ребенка читать в 3 года, если он сам не просит. В этом возрасте
+                                        ведущая деятельность — игровая. Лучшее развитие — это лепка, прогулки и
+                                        сюжетно-ролевые игры.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="sleep">
+                            <div class="card__content">
+                                <span class="tag tag--sleep">Сон</span>
+                                <h3 class="card__title">Секреты здорового детского сна</h3>
+                                <div class="card__text">
+                                    <p>Качественный сон влияет на иммунитет. Соблюдайте гигиену: ритуалы за час до сна,
+                                        прохладный воздух (19°C) и полная темнота (шторы блэкаут) для выработки
+                                        мелатонина.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="food">
+                            <div class="card__content">
+                                <span class="tag tag--food">Питание</span>
+                                <h3 class="card__title">Введение прикорма: с чего начать?</h3>
+                                <div class="card__text">
+                                    <p>Начинайте около 6 месяцев с овощных пюре (кабачок, цветная капуста). Не
+                                        заставляйте
+                                        доедать! Еда должна ассоциироваться с удовольствием, а не с насилием.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--article content-item" data-type="article" data-category="food">
+                            <div class="card__content">
+                                <span class="tag tag--food">Питание</span>
+                                <h3 class="card__title">Ребенок-малоежка: как накормить?</h3>
+                                <div class="card__text">
+                                    <p>Исключите перекусы печеньем между приемами пищи. Разрешите ребенку помогать вам
+                                        готовить. Используйте "правило шведского стола" — предлагайте выбор полезных
+                                        продуктов.</p>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        
+                        <article class="card card--tip content-item" data-type="tip" data-category="psy"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--psy">Психология</span>
+                                <h3 class="card__title">💡 Предупреждайте заранее</h3>
+                                <div class="card__text">
+                                    <p>Детям сложно резко менять деятельность. Вместо «Быстро собирайся, мы уходим!»,
+                                        скажите: «У тебя есть еще 5 минут поиграть, когда прозвенит таймер — мы идем
+                                        одеваться».</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--tip content-item" data-type="tip" data-category="psy"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--psy">Психология</span>
+                                <h3 class="card__title">💡 Контакт глаз</h3>
+                                <div class="card__text">
+                                    <p>Когда вы о чем-то просите ребенка, опуститесь на уровень его глаз. Просьба,
+                                        сказанная
+                                        сверху вниз или из другой комнаты, воспринимается как фоновый шум.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--tip content-item" data-type="tip" data-category="psy"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--psy">Психология</span>
+                                <h3 class="card__title">💡 Правило объятий</h3>
+                                <div class="card__text">
+                                    <p>Психологи утверждают: для выживания нужно 4 объятия в день, для поддержания формы
+                                        —
+                                        8, а для роста и развития — 12. Обнимайте ребенка просто так!</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--tip content-item" data-type="tip" data-category="psy"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--psy">Психология</span>
+                                <h3 class="card__title">💡 Альтернатива слову "Нет"</h3>
+                                <div class="card__text">
+                                    <p>Частое «нет» перестает работать. Заменяйте его позитивным утверждением. Вместо
+                                        «Не
+                                        бегай по лужам!» скажите: «Давай обойдем лужу по сухому асфальту».</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        
+                        <article class="card card--tip content-item" data-type="tip" data-category="health"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--health">Здоровье</span>
+                                <h3 class="card__title">💡 Влажность воздуха</h3>
+                                <div class="card__text">
+                                    <p>Сухой воздух пересушивает слизистую носа, лишая её защиты от вирусов. Купите
+                                        увлажнитель и поддерживайте влажность в детской на уровне 50-60%.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--tip content-item" data-type="tip" data-category="health"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--health">Здоровье</span>
+                                <h3 class="card__title">💡 Чистка зубов с первого зуба</h3>
+                                <div class="card__text">
+                                    <p>Начинать чистить зубы нужно сразу после их появления. Используйте мягкую
+                                        силиконовую
+                                        щеточку и детскую пасту (размером с рисовое зернышко).</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--tip content-item" data-type="tip" data-category="health"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--health">Здоровье</span>
+                                <h3 class="card__title">💡 Больше грязи — шире морда?</h3>
+                                <div class="card__text">
+                                    <p>Излишняя стерильность вредит иммунитету. Не нужно мыть полы с хлоркой или
+                                        кипятить
+                                        все игрушки. Обычного мыла и воды вполне достаточно.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--tip content-item" data-type="tip" data-category="health"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--health">Здоровье</span>
+                                <h3 class="card__title">💡 Одежда слоями</h3>
+                                <div class="card__text">
+                                    <p>Собираясь на прогулку зимой, используйте принцип многослойности: термобелье
+                                        (отводит
+                                        влагу) + флис (согревает) + мембрана (защищает от ветра и воды).</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        
+                        <article class="card card--tip content-item" data-type="tip" data-category="dev"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--dev">Развитие</span>
+                                <h3 class="card__title">💡 Озвучивайте действия</h3>
+                                <div class="card__text">
+                                    <p>Чтобы ребенок быстрее заговорил, работайте "радио". Комментируйте всё, что
+                                        делаете:
+                                        «Сейчас мы надеваем красную шапку, а теперь идем мыть руки».</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--tip content-item" data-type="tip" data-category="dev"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--dev">Развитие</span>
+                                <h3 class="card__title">💡 Откажитесь от сюсюканья</h3>
+                                <div class="card__text">
+                                    <p>Не искажайте слова («бибика», «ням-ням»). С самого рождения говорите с ребенком
+                                        нормальным, четким, взрослым языком. Это формирует правильный фонематический
+                                        слух.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--tip content-item" data-type="tip" data-category="dev"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--dev">Развитие</span>
+                                <h3 class="card__title">💡 Сенсорные коробки</h3>
+                                <div class="card__text">
+                                    <p>Насыпьте в контейнер рис, спрячьте туда мелкие игрушки и дайте малышу их искать.
+                                        Это
+                                        идеальный и дешевый тренажер для развития пальчиков.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--tip content-item" data-type="tip" data-category="dev"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--dev">Развитие</span>
+                                <h3 class="card__title">💡 Скука — двигатель прогресса</h3>
+                                <div class="card__text">
+                                    <p>Не пытайтесь развлекать ребенка 24/7. Именно в моменты скуки у детей рождаются
+                                        самые
+                                        креативные идеи для самостоятельных игр.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        
+                        <article class="card card--tip content-item" data-type="tip" data-category="sleep"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--sleep">Сон</span>
+                                <h3 class="card__title">💡 Признаки усталости</h3>
+                                <div class="card__text">
+                                    <p>Не ждите, пока ребенок начнет плакать. Укладывайте спать, когда он только начал
+                                        тереть глазки, зевать или терять интерес к любимым игрушкам.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--tip content-item" data-type="tip" data-category="sleep"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--sleep">Сон</span>
+                                <h3 class="card__title">💡 Разделяйте еду и сон</h3>
+                                <div class="card__text">
+                                    <p>Постарайтесь сделать так, чтобы ребенок не засыпал прямо с бутылочкой или грудью.
+                                        Покормите, затем почитайте книгу, и только потом укладывайте. Так разорвется
+                                        ассоциация "еда=сон".</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--tip content-item" data-type="tip" data-category="sleep"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--sleep">Сон</span>
+                                <h3 class="card__title">💡 Активное время</h3>
+                                <div class="card__text">
+                                    <p>Вся физическая активность (бег, щекотка, подкидывания) должна заканчиваться за
+                                        1,5
+                                        часа до сна. Перед сном — только спокойные игры (пазлы, рисование, лепка).</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--tip content-item" data-type="tip" data-category="sleep"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--sleep">Сон</span>
+                                <h3 class="card__title">💡 Темнота — друг сна</h3>
+                                <div class="card__text">
+                                    <p>Даже слабый свет от фонаря на улице может мешать глубокому сну. Если ребенок не
+                                        боится темноты, старайтесь спать в полностью затемненной комнате.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        
+                        <article class="card card--tip content-item" data-type="tip" data-category="food"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--food">Питание</span>
+                                <h3 class="card__title">💡 Разрешите испачкаться</h3>
+                                <div class="card__text">
+                                    <p>Исследование еды руками — важный этап введения прикорма. Если вы будете постоянно
+                                        вытирать ребенку рот и руки в процессе, это может вызвать у него отвращение к
+                                        еде.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--tip content-item" data-type="tip" data-category="food"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--food">Питание</span>
+                                <h3 class="card__title">💡 Семейные ужины</h3>
+                                <div class="card__text">
+                                    <p>Старайтесь хотя бы один раз в день есть всем вместе за одним столом. Дети лучше
+                                        всего
+                                        едят тогда, когда видят, что родители едят ту же самую еду с аппетитом.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--tip content-item" data-type="tip" data-category="food"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--food">Питание</span>
+                                <h3 class="card__title">💡 Яркая тарелка</h3>
+                                <div class="card__text">
+                                    <p>Дети любят глазами. Чем ярче еда, тем выше шанс, что она будет съедена. Добавьте
+                                        в
+                                        кашу цветные ягоды, а овощи нарежьте в форме звездочек.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--tip content-item" data-type="tip" data-category="food"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--food">Питание</span>
+                                <h3 class="card__title">💡 Никаких гаджетов за едой</h3>
+                                <div class="card__text">
+                                    <p>Еда под мультики приводит к перееданию и нарушению пищевого поведения, так как
+                                        ребенок глотает машинально, не понимая вкуса. Еда — это отдельный процесс.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card card--tip content-item" data-type="tip" data-category="psy"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--psy">Психология</span>
+                                <h3 class="card__title">💡 Правило 3 минут</h3>
+                                <div class="card__text">
+                                    <p>Встречайте ребенка так, будто не видели его целую вечность, даже если расстались
+                                        полчаса назад. Присядьте на уровень его глаз и обнимите.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--tip content-item" data-type="tip" data-category="psy"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--psy">Психология</span>
+                                <h3 class="card__title">💡 "Я-сообщения"</h3>
+                                <div class="card__text">
+                                    <p>Вместо обвинений "Ты опять разбросал игрушки!", используйте Я-сообщения: "Я очень
+                                        расстраиваюсь, когда в комнате беспорядок".</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--tip content-item" data-type="tip" data-category="health"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--health">Здоровье</span>
+                                <h3 class="card__title">💡 Свежий воздух</h3>
+                                <div class="card__text">
+                                    <p>Проветривание комнаты по 10-15 минут каждый час в сезон простуд снижает
+                                        концентрацию
+                                        вирусов в воздухе на 80%.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--tip content-item" data-type="tip" data-category="dev"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--dev">Развитие</span>
+                                <h3 class="card__title">💡 Меньше — лучше</h3>
+                                <div class="card__text">
+                                    <p>Оставьте в доступе ребенка только 5-7 игрушек, а остальные уберите в шкаф.
+                                        Меняйте их
+                                        раз в неделю. Так ребенок играет глубже и фантазирует.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--tip content-item" data-type="tip" data-category="sleep"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--sleep">Сон</span>
+                                <h3 class="card__title">💡 Белый шум</h3>
+                                <div class="card__text">
+                                    <p>Звук дождя или работающего фена (белый шум) напоминает новорожденным звуки в
+                                        утробе
+                                        матери и помогает быстрее успокоиться.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card card--tip content-item" data-type="tip" data-category="food"
+                            style="display: none;">
+                            <div class="card__content">
+                                <span class="tag tag--food">Питание</span>
+                                <h3 class="card__title">💡 Доступ к воде</h3>
+                                <div class="card__text">
+                                    <p>Поставьте на видное место яркий кувшин с водой и детскую кружку. Ребенок должен
+                                        иметь
+                                        возможность попить в любой момент без просьб.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <p id="noResultsMsg"
+                        style="display: none; text-align: center; font-size: 18px; color: #666; margin-top: 40px;">По
+                        вашим
+                        критериям ничего не найдено 😔</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__info">
+                    <p class="logo logo--footer">YoungFamily</p>
+                    <p class="footer__desc">Ваш ежедневный помощник в воспитании счастливых детей.</p>
+                </div>
+                <div class="footer__copyright">
+                    <p>&copy; 2026 Дипломный проект: Разработка информационного сайта «Помощь родителям».</p>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная — Помощь родителям</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Логотип Помощь Родителям" class="logo__img">
+                YoungFamily
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">Главная</a></li>
+                    <li class="nav__item"><a href="tips.html" class="nav__link">Советы и статьи</a></li>
+                    <li class="nav__item"><a href="video.html" class="nav__link">Видеоуроки</a></li>
+                    <li class="nav__item"><a href="faq.html" class="nav__link">Частые вопросы</a></li>
+                </ul>
+            </nav>
+            <button class="burger" id="burger-btn">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- 1. Главный экран (Hero Section) с Видеофоном -->
+        <section class="hero">
+
+            <!-- Само видео -->
+            <video class="hero__video" autoplay loop muted playsinline>
+                <source src="images/glav.mp4" type="video/mp4">
+            </video>
+
+            <!-- Темная прозрачная пленка поверх видео для читаемости текста -->
+            <div class="hero__overlay"></div>
+
+            <!-- Контент поверх видео -->
+            <div class="container hero__container">
+                <h1 class="hero__title hero__title--video">Ваш надежный навигатор в мире родительства</h1>
+                <p class="hero__text hero__text--video">
+                    Воспитание ребенка — это сложный, но невероятно увлекательный путь.
+                    Наш информационный портал создан для того, чтобы помочь мамам и папам находить ответы на самые
+                    важные вопросы.
+                </p>
+                <div class="hero__buttons">
+                    <a href="tips.html" target="_blank" class="btn btn--primary">Читать советы</a>
+                    <a href="#about" class="btn btn--outline btn--outline-video">Узнать больше</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Секция "О проекте" (Текстовый блок для солидности) -->
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section__title">О нашем проекте</h2>
+                <div class="about__content">
+                    <p class="about__text">
+                        Проект <strong>«Помощь родителям»</strong> разработан как современная база знаний, объединяющая
+                        проверенные методики воспитания, советы психологов и практические рекомендации по уходу за
+                        детьми.
+                    </p>
+                    <p class="about__text">
+                        Мы понимаем, как трудно бывает сориентироваться в огромном потоке информации в интернете.
+                        Поэтому мы собрали и структурировали самые важные материалы. Наша цель — сэкономить ваше время и
+                        дать уверенность в каждом решении, касающемся здоровья и развития вашего ребенка.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Навигация по основным направлениям (Что есть на сайте) -->
+        <section class="section features section--light">
+            <div class="container">
+                <h2 class="section__title">Что вы найдете на портале?</h2>
+                <div class="features__grid">
+
+                    <!-- Блок 1 -->
+                    <div class="feature-card">
+                        <h3 class="feature-card__title">📚 Статьи и советы</h3>
+                        <p class="feature-card__text">
+                            Развернутые материалы о детской психологии, правильном питании, режиме дня и возрастных
+                            кризисах. Только полезная информация без лишней воды.
+                        </p>
+                        <a href="tips.html" target="_blank" class="feature-card__link">Перейти в раздел &rarr;</a>
+                    </div>
+
+                    <!-- Блок 2 -->
+                    <div class="feature-card">
+                        <h3 class="feature-card__title">🎥 Видеообучение</h3>
+                        <p class="feature-card__text">
+                            Наглядные видеоуроки по гимнастике, творческим играм и уходу за грудничками. Формат видео
+                            позволяет быстрее и точнее усвоить практические навыки.
+                        </p>
+                        <a href="videos.html" target="_blank" class="feature-card__link">Смотреть уроки &rarr;</a>
+                    </div>
+
+                    <!-- Блок 3 -->
+                    <div class="feature-card">
+                        <h3 class="feature-card__title">👶 Развитие по возрастам</h3>
+                        <p class="feature-card__text">
+                            Удобный рубрикатор поможет быстро найти информацию, актуальную именно для возраста вашего
+                            ребенка — от новорожденного до младшего школьника.
+                        </p>
+                        <a href="tips.html" target="_blank" class="feature-card__link">Выбрать возраст &rarr;</a>
+                    </div>
+                    <!-- Блок 4: Частые вопросы -->
+                    <div class="feature-card">
+                        <h3 class="feature-card__title">❓ Частые вопросы</h3>
+                        <p class="feature-card__text">
+                            Быстрые и точные ответы на самые популярные вопросы, которые волнуют молодых родителей в
+                            первые годы жизни малыша.
+                        </p>
+                        <a href="faq.html" target="_blank" class="feature-card__link">Найти ответ &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="section cta">
+            <div class="container cta__container">
+                <h2 class="cta__title">Готовы узнать что-то новое?</h2>
+                <p class="cta__text">Начните с изучения наших самых популярных статей о воспитании.</p>
+                <a href="tips.html" target="_blank" class="btn btn--primary">Перейти к статьям</a>
+            </div>
+        </section>
+
+    </ma
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__info">
+                <p class="logo logo--footer">YoungFamily</p>
+                <p class="footer__desc">Ваш ежедневный помощник в воспитании счастливых детей.</p>
+            </div>
+            <div class="footer__copyright">
+                <p>&copy; 2026 Дипломный проект: Разработка информационного сайта «Помощь родителям».</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключение скрипта для мобильного меню -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Частые вопросы — Помощь родителям</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Логотип Помощь Родителям" class="logo__img">
+                YoungFamily
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="tips.html" class="nav__link">Советы и статьи</a></li>
+                    <li class="nav__item"><a href="video.html" class="nav__link">Видеоуроки</a></li>
+                    <li class="nav__item"><a href="faq.html" class="nav__link nav__link--active">Частые вопросы</a></li>
+                </ul>
+            </nav>
+            <button class="burger" id="burger-btn">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header page-header--faq">
+            <div class="container relative-container">
+
+                <img src="images/faq.png" alt="Доктор FAQ" class="page-header__faq-doctor">
+
+                <h1 class="page-header__title">Ответы на частые вопросы</h1>
+                <p class="page-header__text">Мы собрали для вас самую важную информацию, чтобы развеять ваши тревоги.
+                </p>
+            </div>
+        </section>
+        <section class="section section--light">
+            <div class="container faq-layout">
+                <div class="faq-form-card">
+                    <h3 class="faq-form__title">Не нашли ответ?</h3>
+                    <p class="faq-form__desc">Задайте вопрос нашему дежурному педиатру, и мы ответим вам на почту.
+                    </p>
+                    <form class="faq-form">
+                        <input type="text" placeholder="Ваше имя" class="faq-input" required>
+                        <input type="email" placeholder="Ваш Email" class="faq-input" required>
+                        <textarea placeholder="Опишите вашу ситуацию..." class="faq-input faq-textarea"
+                            required></textarea>
+                        <button type="submit" class="btn btn--primary" style="width: 100%;">Отправить
+                            вопрос</button>
+                    </form>
+                </div>
+                </aside>
+
+                <div class="faq-content">
+                    <div class="faq-list">
+
+                        <details class="faq-item" open>
+                            <summary class="faq-question">Когда нужно делать первую прививку?</summary>
+                            <div class="faq-answer">Первая прививка (от гепатита В) делается новорожденному еще в
+                                роддоме, в первые 24 часа жизни. Следующая (БЦЖ от туберкулеза) ставится на 3-7 день.
+                                Дальнейший график вакцинации зависит от Национального календаря профилактических
+                                прививок вашей страны и рекомендаций вашего личного педиатра.</div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary class="faq-question">Как понять, что ребенку хватает грудного молока?</summary>
+                            <div class="faq-answer">Главные критерии: стабильная прибавка в весе (в среднем 150-200 г в
+                                неделю в первые месяцы) и количество мочеиспусканий (в норме — не менее 10-12 раз в
+                                сутки). Если пеленки или подгузники регулярно тяжелые, а малыш активен, значит, молока
+                                достаточно.</div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary class="faq-question">Нужно ли допаивать водой младенца на ГВ?</summary>
+                            <div class="faq-answer">Согласно рекомендациям ВОЗ, ребенок, находящийся на исключительно
+                                грудном вскармливании, до 6 месяцев не нуждается в дополнительной воде. Грудное молоко
+                                на 88% состоит из воды и полностью утоляет жажду малыша даже в жаркую погоду.</div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary class="faq-question">С какого возраста можно сажать ребенка в ходунки?</summary>
+                            <div class="faq-answer">Современные ортопеды настоятельно не рекомендуют использовать
+                                классические ходунки и прыгунки вообще. Они нарушают естественный паттерн формирования
+                                навыка ходьбы, дают неправильную нагрузку на неокрепший позвоночник и повышают риск
+                                травматизма. Лучшее место для развития ребенка — твердый пол.</div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary class="faq-question">Что делать при младенческих коликах?</summary>
+                            <div class="faq-answer">Колики — это этап созревания ЖКТ, который обычно проходит к 3-4
+                                месяцам. Помочь может: выкладывание на животик перед едой, массаж животика по часовой
+                                стрелке, теплая пеленочка, ношение "столбиком" после еды и контакт "кожа к коже".
+                                Медикаменты (симетикон) стоит применять только после консультации с врачом.</div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary class="faq-question">Какая температура воздуха должна быть в детской?</summary>
+                            <div class="faq-answer">Оптимальная температура в комнате ребенка: 20–22°C днем и 18–20°C
+                                ночью. Важно также следить за влажностью воздуха — она должна составлять 50–60%.
+                                Прохладный и влажный воздух — лучшая профилактика респираторных заболеваний.</div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary class="faq-question">Когда начинать чистить зубы малышу?</summary>
+                            <div class="faq-answer">Чистку нужно начинать с момента появления первого зуба. Используйте
+                                мягкую силиконовую щеточку-напальчник или специальную детскую щетку. Зубной пасты
+                                (соответствующей возрасту) должно быть не больше рисового зернышка.</div>
+                        </details>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
